@@ -2,12 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from io import StringIO
 from main import (
-    read_csv_file, summary_statistics, plot_histograms, plot_scatter_with_hue, 
+    summary_statistics, plot_histograms, plot_scatter_with_hue, 
     plot_box_by_category, plot_correlation_heatmap, plot_scatter_with_trend, 
     plot_bar_by_category
 )
 
-# Sample CSV data as a string
 sample_data = """customer_id,age,annual_income,purchase_amount,purchase_frequency,region,loyalty_score
 1,23,50000,200,5,North,80
 2,45,60000,300,7,South,85
@@ -16,27 +15,15 @@ sample_data = """customer_id,age,annual_income,purchase_amount,purchase_frequenc
 5,29,70000,350,7,North,75
 """
 
-# Function to create DataFrame from sample data
+# Function to create DataFrame from sample data using StringIO
 def setup_dataframe():
     return pd.read_csv(StringIO(sample_data))
-
-def test_read_csv_file():
-    """Test read_csv_file function using StringIO"""
-    df = setup_dataframe()
-    result = pd.read_csv(StringIO(sample_data))
-    pd.testing.assert_frame_equal(result, df)
-    print("test_read_csv_file passed")
 
 def test_summary_statistics():
     """Test summary_statistics function"""
     df = setup_dataframe()
-
-    # Run the summary_statistics function to ensure it doesn't raise any errors
-    try:
-        summary_statistics(df)
-        print("test_summary_statistics passed")
-    except Exception as e:
-        print(f"test_summary_statistics failed: {e}")
+    summary_statistics(df)
+    print("test_summary_statistics passed")
 
 def test_plot_histograms():
     """Test plot_histograms function"""
@@ -88,7 +75,6 @@ def test_plot_bar_by_category():
     print("test_plot_bar_by_category passed")
 
 # Run the tests
-test_read_csv_file()
 test_summary_statistics()
 test_plot_histograms()
 test_plot_scatter_with_hue()
