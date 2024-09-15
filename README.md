@@ -126,3 +126,13 @@ To view the status of the CI pipeline, navigate to the **Actions** tab of your r
 
 ## Usage
 
+### Histograms
+The `plot_histograms` function generates histograms for specified columns in the dataset, displaying the distribution of values. The histograms are saved as images and embedded in the summary report. 
+
+To use this function, you can call it with the following code:
+
+```python
+plot_histograms(df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'], output_report)
+
+This will produce histograms for the columns `age`, `annual_income`, `purchase_amount`, and `purchase_frequency`, showing the distribution of values for each. The generated histogram images are saved as `Histogram_column_distributions.png` and are included in the summary report.
+
