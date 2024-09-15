@@ -1,24 +1,26 @@
 [![CI](https://github.com/nogibjj/Mobasserul_Haque_MiniProject1/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_MiniProject1/actions/workflows/cicd.yml)
-Python Template for week1 mini project IDS706
-# Palindrome Checker
 
-This project contains a Python function to check if a given word is a palindrome. 
+Pandas Descriptive Script mini Project
+# Source
 
-## Function
+Customer Purchasing Behaviors
+url : https://www.kaggle.com/datasets/hanaksoy/customer-purchasing-behaviors
 
-### `is_palindrome(word: str) -> bool`
+# About Dataset:
 
-Check if the given word is a palindrome. A palindrome is a word that reads the same forwards and backwards.
+customer_id: Unique ID of the customer.
+age: The age of the customer.
+annual_income: The customer's annual income (in USD).
+purchase_amount: The total amount of purchases made by the customer (in USD).
+purchase_frequency: Frequency of customer purchases (number of times per year).
+region: The region where the customer lives (North, South, East, West).
+loyalty_score: Customer's loyalty score (a value between 0-100).
 
-**Args:**
-- `word` (str): The word to check.
-
-**Returns:**
-- `bool`: True if the word is a palindrome, False otherwise.
+This dataset includes information on customer profiles and their purchasing behaviors. The data features columns for user ID, age, annual income, purchase amount, loyalty score (categorized into classes), region, and purchase frequency. It is intended for analyzing customer segmentation and loyalty trends, and can be used for various machine learning and data analysis tasks related to customer behavior and market research.
 
 ## Running Tests
 
 To run the tests, use the following command:
 
 ```bash
-python -m unittest test_palindrome_checker.py
+python -m unittest test_main.py
