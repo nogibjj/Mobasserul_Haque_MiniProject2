@@ -19,7 +19,7 @@ lint:
 
 # Run tests using Pytest
 test:
-	$(PYTHON) -m pytest --cov=palindrome_checker test_palindrome_checker.py
+	$(PYTHON) -m pytest --cov=main test_main.py
 	
 # Default target
 all: install format lint test
