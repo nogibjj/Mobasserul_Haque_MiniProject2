@@ -157,3 +157,34 @@ To use this function, you can call it with the following code:
 plot_box_by_category(df, 'region', 'loyalty_score', output_report)
 ```
 This will generate a box plot comparing the `distribution of loyalty_score` across different `regions`. The generated box plot image is saved as `Loyalty_score_by_region_boxplot.png` and is included in the summary report.
+
+### Correlation Heatmap
+The `plot_correlation_heatmap` function visualizes the correlation matrix between specified numerical columns using a heatmap. The heatmap is saved as an image and embedded in the summary report.
+
+To use this function, you can call it with the following code:
+
+```python
+plot_correlation_heatmap(df, ['purchase_amount', 'purchase_frequency', 'loyalty_score'], output_report)
+```
+This will generate a heatmap showing the correlation matrix for `purchase_amount`, `purchase_frequency`, and `loyalty_score`. The generated heatmap image is saved as `Correlation_matrix_columns.png` and is included in the summary report.
+
+### Scatter Plot with Trend Line
+The `plot_scatter_with_trend` function visualizes the relationship between two specified columns with a trend line to show the overall trend. The scatter plot with the trend line is saved as an image and embedded in the summary report.
+
+To use this function, you can call it with the following code:
+
+```python
+plot_scatter_with_trend(df, 'annual_income', 'purchase_amount', output_report)
+```
+This will generate a scatter plot showing the relationship between `annual_income` and `purchase_amount`, with a trend line included. The generated scatter plot image with the trend line is saved as `scatter_plot_trend_line.png` and is included in the summary report.
+
+### Bar Plot by Category
+The `plot_bar_by_category` function compares the average values of a numerical column across different categories using a bar plot. The bar plot is saved as an image and embedded in the summary report.
+
+To use this function, you can call it with the following code:
+
+```python
+plot_bar_by_category(df, 'region', 'purchase_amount', output_report)
+```
+This will generate a bar plot comparing the `average purchase_amount by region`. The generated bar plot image is saved as `bar_plot_average_purchase_amt_by_regions.png` and is included in the summary report.
+
