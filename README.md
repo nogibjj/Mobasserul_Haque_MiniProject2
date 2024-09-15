@@ -25,9 +25,9 @@ This dataset includes information on customer profiles and their purchasing beha
 
 ![Visualization](Histogram_column_distributions.png)
 
-![Visualization](Loyalty_score by region boxplot.png)
+![Visualization](Loyalty_score_by_region_boxplot.png)
 
-![Visualization](scatter_plot_hue by region.png)
+![Visualization](scatter_plot_hue_by_region.png)
 
 ![Visualization](scatter_plot_trend_line.png)
 
