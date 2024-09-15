@@ -136,3 +136,24 @@ plot_histograms(df, ['age', 'annual_income', 'purchase_amount', 'purchase_freque
 ```
 This will produce histograms for the columns `age`, `annual_income`, `purchase_amount`, and `purchase_frequency`, showing the distribution of values for each. The generated histogram images are saved as `Histogram_column_distributions.png` and are included in the summary report.
 
+### Scatter Plot with Hue
+
+The `plot_scatter_with_hue` function visualizes the relationship between two specified columns, colored by a categorical hue. The scatter plot is saved as an image and embedded in the summary report.
+
+To use this function, you can call it with the following code:
+
+```python
+plot_scatter_with_hue(df, 'annual_income', 'purchase_amount', 'region', output_report)
+```
+This will generate a scatter plot showing the relationship between `annual_income` and `purchase_amount`, with different colors representing the `region`. The generated scatter plot image is saved as `scatter_plot_hue_by_region.png` and is included in the summary report.
+
+### Box Plot by Category
+
+The `plot_box_by_category` function compares the distribution of a numerical column across different categories using a box plot. The box plot is saved as an image and embedded in the summary report.
+
+To use this function, you can call it with the following code:
+
+```python
+plot_box_by_category(df, 'region', 'loyalty_score', output_report)
+```
+This will generate a box plot comparing the `distribution of loyalty_score` across different `regions`. The generated box plot image is saved as `Loyalty_score_by_region_boxplot.png` and is included in the summary report.
