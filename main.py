@@ -68,8 +68,7 @@ def plot_bar_by_category(dataframe, category_col, value_col):
     plt.show()
 
 
-file_path = 'Customer Purchasing Behaviors.csv'
-df = read_csv_file(file_path)
+df = read_csv_file('Customer Purchasing Behaviors.csv')
 summary_statistics(df)
 
 plot_histograms(df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'])
