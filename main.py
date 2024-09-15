@@ -2,7 +2,18 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('Customer Purchasing Behaviors.csv')
+def read_csv_file(file_path):
+    return pd.read_csv(file_path)
+
+def summary_statistics(dataframe):
+    """Display summary statistics for numerical columns in the DataFrame."""
+    summary = dataframe.describe().transpose()
+    summary['median'] = dataframe.median(numeric_only=True)
+    summary['range'] = summary['max'] - summary['min']
+    summary['variance'] = dataframe.var(numeric_only=True)
+    print("Summary Statistics:")
+    print(summary)
+    
 
 def plot_histograms(dataframe, columns, bins=20):
     """Plot histograms for specified columns in the DataFrame."""
@@ -55,6 +66,11 @@ def plot_bar_by_category(dataframe, category_col, value_col):
     plt.xlabel(category_col)
     plt.ylabel(f'Average {value_col}')
     plt.show()
+
+
+file_path = 'Customer Purchasing Behaviors.csv'
+df = read_csv_file(file_path)
+summary_statistics(df)
 
 plot_histograms(df, ['age', 'annual_income', 'purchase_amount', 'purchase_frequency'])
 plot_scatter_with_hue(df, 'annual_income', 'purchase_amount', 'region')
