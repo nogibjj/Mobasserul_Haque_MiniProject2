@@ -21,6 +21,21 @@ url : https://www.kaggle.com/datasets/hanaksoy/customer-purchasing-behaviors
 
 This dataset includes information on customer profiles and their purchasing behaviors. The data features columns for user ID, age, annual income, purchase amount, loyalty score (categorized into classes), region, and purchase frequency. It is intended for analyzing customer segmentation and loyalty trends, and can be used for various machine learning and data analysis tasks related to customer behavior and market research.
 
+# Data Visualization
+
+![Visualization](Histogram_column_distributions.png)
+
+![Visualization](Loyalty_score by region boxplot.png)
+
+![Visualization](scatter_plot_hue by region.png)
+
+![Visualization](scatter_plot_trend_line.png)
+
+![Visualization](Correlation_matrix_columns.png)
+
+![Visualization](bar_plot_average_purchase_amt_by_regions.png)
+
+
 ## Running Tests
 
 To run the tests, use the following command:
