@@ -1,6 +1,5 @@
 # Pandas Descriptive Script Mini Project
-
-[![CI](https://github.com/nogibjj/Mobasserul_Haque_MiniProject1/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_MiniProject1/actions/workflows/cicd.yml)
+[![CI](https://github.com/nogibjj/Mobasserul_Haque_MiniProject2/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/Mobasserul_Haque_MiniProject2/actions/workflows/cicd.yml)
 
 This project performs exploratory data analysis (EDA) on a dataset containing customer purchasing behavior, providing insights into various patterns and relationships using pandas, Matplotlib, and Seaborn.
 
